@@ -1,0 +1,18 @@
+<div class="container-fluid p-4 bg-image img-fluid" style="background-image: url('https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405__480.jpg');
+    height: 100vh; background-repeat: no-repeat; background-size:cover;">
+    <div class="row">
+        <div class="col-md-12 pb-3 pt-3">
+            <h1 class="text-center pb-5 display-4">weather details</h1>
+            <input class="form-control" (keyup)="search($event)" type="text" placeholder="Search here...." aria-label="default input example">
+            <div class="row pt-4">
+                <div class="col-4 text-center"><img src="https://openweathermap.org/img/wn/{{details.weather[0].icon}}@2x.png" alt="" /></div>
+                <div class="col-4 text-center">
+                    <p class="h1">{{weather}}</p> <br>
+                    <p class="h4">{{details.weather[0].main}}</p>
+                </div>
+                <div class="col-4 text-center"><img src="https://openweathermap.org/img/wn/{{details.weather[0].icon}}@2x.png" alt="" /></div>
+            </div>
+
+        </div>
+    </div>
+</div>
